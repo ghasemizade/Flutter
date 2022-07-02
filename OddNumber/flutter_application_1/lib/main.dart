@@ -1,5 +1,5 @@
-import 'dart:convert';
-import 'dart:ffi';
+// import 'dart:convert';
+// import 'dart:ffi';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -106,7 +106,7 @@ class _AddTwoNumbersState extends State<AddTwoNumbers> {
                 child: Text("Calculate"),
                 onPressed: () {
                   setState(() {
-                    var product = [5];
+                    var product = 1;
                     // var i = num1controller;
                     // ignore: prefer_const_constructors
                     int j = int.parse(num2controller.text);
@@ -115,14 +115,11 @@ class _AddTwoNumbersState extends State<AddTwoNumbers> {
                     {
                       if (i % 2 == 1)
                       {
-                        product[i] *= i;
+                        product *= i;
                       }
                     }
-                    //double Calculate = int.parse(num1controller.text) * int.parse(num1controller.text) * 3.14;
-                    for (i; i < j; i++)
-                    {
-                      result = product[i].toString();    
-                    }
+                    
+                      result = product.toString();    
                     
                   });
                 },
